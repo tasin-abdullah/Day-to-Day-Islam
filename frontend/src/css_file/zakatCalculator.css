@@ -1,0 +1,114 @@
+.jakat-main-container {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-gap: 20px; /* Adjust gap between columns */
+  
+  
+  margin: 20px;
+  margin-top: 200px;
+}
+
+.jakat-calculator-grid{
+  grid-column: 1;
+  width: 100%;
+  text-align: center;
+
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  border: 5px solid gray;
+  border-radius: 20px;
+
+  margin-bottom: 50px;
+}
+.jakat-text-grid {
+  grid-column: 2;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.user-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.jakat-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.jakat-button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 850px) {
+  .jakat-main-container {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .jakat-calculator-grid{
+    width: 80%;
+  }
+  .jakat-text-grid {
+    padding: 20px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px; 
+  }
+  .user-input {
+    padding: 6px; 
+  }
+  .jakat-button {
+    padding: 8px 20px; 
+    font-size: 14px; 
+  }
+}
+
+/* For screens with a width of 560px */
+@media only screen and (max-width: 560px) {
+  .jakat-main-container {
+    grid-gap: 10px; 
+
+    margin-top: 150px; 
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .jakat-calculator-grid{
+    width: 90%;
+  }
+  .jakat-text-grid {
+    padding: 20px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px; 
+  }
+  .user-input {
+    padding: 6px; 
+  }
+  .jakat-button {
+    padding: 8px 20px; 
+    font-size: 14px; 
+  }
+}
+
+

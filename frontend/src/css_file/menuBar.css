@@ -1,0 +1,132 @@
+.header-container {
+  background-color: rgb(27, 78, 145);
+  color: rgb(176, 246, 168);
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.header-message {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.menu-bar-image {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-bar-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+}
+
+.menu-table {
+  border-collapse: collapse;
+  border: 2px solid lightblue;
+}
+
+.menu-table td {
+  height: 30px;
+  font-weight: normal;
+  text-align: center;
+  align-items: center;
+  border-left: 2px rgb(40, 175, 35) solid;
+  border-radius: 5px;
+
+}
+
+.home-logo {
+  border-radius: 8px;
+  background-color: rgb(59, 71, 131);
+  height: 35px;
+  width: auto;
+  margin: 5px;
+}
+.inline-menu-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #e00000;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: -30px; /* Adjust to position the tooltip as desired */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 2;
+  transition: opacity 0.3s;
+  font-size: 20px;
+}
+
+.inline-menu-div {
+  position: relative;
+}
+
+.inline-menu-div:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for screens smaller than 768px */
+  .header-message {
+    font-size: 15px; /* Reduced font size for smaller screens */
+  }
+  
+  .header-container {
+    padding-left: 10px; /* Adjusted padding for smaller screens */
+    padding-right: 10px;
+    height: 60px; /* Reduced header height */
+  }
+  
+  .menu-bar-container {
+    top: 60px; /* Adjusted top position for smaller screens */
+    height: 40px; /* Reduced container height */
+  }
+  
+  .menu-bar-image {
+    width: 30px; /* Reduced menu bar image size */
+    height: 30px;
+    padding: 5px; /* Adjusted padding */
+  }
+  .home-logo {
+    border-radius: 8px;
+    background-color: rgb(59, 71, 131);
+    height: 30px;
+    width: auto;
+    margin: 5px;
+  }
+  .tooltiptext {
+    font-size: 15px;
+    width: 50px;
+  }
+}
+

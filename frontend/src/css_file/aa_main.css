@@ -1,0 +1,59 @@
+.inline-div{
+  display: flex;
+  align-items: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  margin-top: 100px;
+}
+
+.inline-div {
+  display: flex;
+  align-items: center;
+}
+
+.user-input {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 300px; /* Maximum width to maintain readability */
+  height: 40px; /* Increased height for better touch targets */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px; /* Slightly increased font size for better readability */
+  font-weight: bold;
+  background-color: lightcyan;
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.user-input:hover {
+  background-color: rgb(156, 241, 241);
+}
+
+.button-container {
+  text-align: center;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .mainDiv {
+    margin-top: 100px; /* Decrease margin-top for smaller screens */
+  }
+
+  .user-input {
+    max-width: 250px; /* Adjust maximum width for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+    height: 35px; /* Decrease height for smaller screens */
+  }
+  
+  .inline-div{
+    display: flex;
+    align-items: center;
+  }
+}

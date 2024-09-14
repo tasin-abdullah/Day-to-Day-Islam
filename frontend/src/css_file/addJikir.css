@@ -1,0 +1,94 @@
+.add-jikir-main {
+  background-image: url('/images/regBG_2.png');
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: lightgreen solid 5px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto; /* Center the element horizontally and add margin for spacing */
+  padding: 20px; /* Reduced padding for smaller screens */
+  font-weight: bold;
+}
+
+.inner-div {
+  backdrop-filter: blur(20px);
+  color: blanchedalmond;
+  text-align: left;
+  border: rgb(154, 182, 15) 5px solid;
+  border-radius: 20px;
+  padding: 20px; /* Reduced padding for smaller screens */
+  margin-top: 20px; /* Increased margin for spacing */
+}
+
+.cross {
+  text-align: right;
+  cursor: pointer;
+}
+
+.image {
+  border: red solid 2px;
+  border-radius: 2px;
+  height: 20px;
+}
+
+.add-tasbih-button {
+  background-color: lightgreen;
+  font-weight: bold;
+  color: darkblue;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+  margin-top: 20px; /* Increased margin for spacing */
+}
+
+.add-tasbih-button:hover {
+  background-color: rgb(7, 204, 7);
+}
+
+.add-jikir-user-input {
+  width: 80%; /* Full width input field */
+  max-width: 300px; /* Set max-width to prevent stretching on larger screens */
+  height: 40px; /* Increased height for better touch accessibility */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: lightcyan;
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  margin-top: 10px; /* Adjusted margin for spacing */
+  padding: 5px 10px; /* Adjusted padding for better appearance */
+}
+
+.add-jikir-user-input:hover {
+  background-color: rgb(156, 241, 241);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .add-jikir-main {
+    width: 90%; /* Reduced width for smaller screens */
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .inner-div {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .add-tasbih-button {
+    width: 100px;
+    margin-top: 15px; /* Adjusted margin for spacing */
+  }
+
+  .add-jikir-user-input {
+    height: 30px; /* Reduced height for smaller screens */
+    font-size: 14px; /* Reduced font size for smaller screens */
+    padding-right: 10px;
+  }
+}

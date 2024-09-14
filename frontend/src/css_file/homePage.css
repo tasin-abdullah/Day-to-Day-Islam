@@ -1,0 +1,85 @@
+.main-home-div {
+  margin-top: 120px; /* Decreased margin for smaller screens */
+  text-align: center;
+}
+
+.home-outer-div {
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Changed grid columns to be responsive */
+  gap: 20px; /* Added gap between grid items */
+}
+
+.home-inner-card {
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 20px; /* Changed margin to margin-bottom for better spacing */
+  width: 250px;
+  margin-left: 20px;
+}
+
+.home-image {
+  height: 200px; /* Decreased height for smaller screens */
+  margin-bottom: 20px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+.home-card-message{
+  color: aqua;
+  font-weight: normal;
+  font-size: 15px;
+}
+.home-button {
+  background-color: #ff7200;
+  font-weight: bold;
+  color: darkblue;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.home-button:hover {
+  background-color: #e00000;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Adjustments for screens smaller than 768px */
+  .home-outer-div {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .home-inner-card {
+    margin-left: 40px;
+    width: 250px;
+  }
+
+  .home-image {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for screens smaller than 768px */
+  .home-outer-div {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .home-inner-card {
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  .home-image {
+    height: 150px;
+  }
+}
